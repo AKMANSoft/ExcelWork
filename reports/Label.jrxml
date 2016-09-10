@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.1.0.final using JasperReports Library version 6.1.0  -->
+<!-- 2016-09-06T16:32:36 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Shipment" columnCount="2" pageWidth="595" pageHeight="842" columnWidth="277" leftMargin="20" rightMargin="20" topMargin="10" bottomMargin="10" uuid="0ac4fe9f-8748-4c4b-a7ac-aad9be4d2580">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Invoice"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<queryString>
+		<![CDATA[SELECT * FROM Invoice]]>
+	</queryString>
+	<field name="ID" class="java.lang.Object"/>
+	<field name="InvoiceNo" class="java.lang.Object"/>
+	<field name="OrderNo" class="java.lang.Object"/>
+	<field name="Date" class="java.lang.Object"/>
+	<field name="TinNo" class="java.lang.Object"/>
+	<field name="ReferenceNo" class="java.lang.Object"/>
+	<field name="CountryOfOrigin" class="java.lang.Object"/>
+	<field name="MOP" class="java.lang.Object"/>
+	<field name="PaymentTerms" class="java.lang.Object"/>
+	<field name="TrackingNo" class="java.lang.Object"/>
+	<field name="S_Name" class="java.lang.Object"/>
+	<field name="S_Address1" class="java.lang.Object"/>
+	<field name="S_Address2" class="java.lang.Object"/>
+	<field name="S_Address3" class="java.lang.Object"/>
+	<field name="S_City" class="java.lang.Object"/>
+	<field name="S_State" class="java.lang.Object"/>
+	<field name="S_PinCode" class="java.lang.Object"/>
+	<field name="S_PhoneNo" class="java.lang.Object"/>
+	<field name="S_Country" class="java.lang.Object"/>
+	<field name="B_Name" class="java.lang.Object"/>
+	<field name="B_Address1" class="java.lang.Object"/>
+	<field name="B_Address2" class="java.lang.Object"/>
+	<field name="B_Address3" class="java.lang.Object"/>
+	<field name="B_City" class="java.lang.Object"/>
+	<field name="B_State" class="java.lang.Object"/>
+	<field name="B_PinCode" class="java.lang.Object"/>
+	<field name="B_PhoneNo" class="java.lang.Object"/>
+	<field name="B_Country" class="java.lang.Object"/>
+	<field name="PakegeType" class="java.lang.Object"/>
+	<field name="Quantity" class="java.lang.Object"/>
+	<field name="Rate" class="java.lang.Object"/>
+	<field name="Description" class="java.lang.Object"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="425">
+			<textField>
+				<reportElement x="0" y="306" width="270" height="17" isRemoveLineWhenBlank="true" uuid="335ce820-a3df-42a6-a0ce-4006c5a16e50"/>
+				<box leftPadding="5"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{S_Address2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="70" width="270" height="19" uuid="6137e795-b5a3-41b5-bbaa-c336c07a7f91"/>
+				<box leftPadding="5"/>
+				<textElement>
+					<font size="15" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Ship to:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="408" width="270" height="17" isRemoveLineWhenBlank="true" uuid="06af3f04-3ac9-4a31-8e9d-c96080caf3b9">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box leftPadding="5"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{S_Country}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="125" width="270" height="17" isRemoveLineWhenBlank="true" uuid="b8916fd5-b796-49e3-b531-97e81e6c6aef"/>
+				<box leftPadding="5"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{B_Address2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="323" width="270" height="17" isRemoveLineWhenBlank="true" uuid="b2fef491-3017-4ba0-9a9d-c3ba90e15645"/>
+				<box leftPadding="5"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{S_Address3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="176" width="270" height="17" isRemoveLineWhenBlank="true" uuid="f702c997-b38d-4727-80cb-c7fcc8238389"/>
+				<box leftPadding="5"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{B_State}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="268" width="270" height="20" uuid="67d6b4de-10c0-4d19-ab51-eb9777b520cb">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box leftPadding="5"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{S_Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="193" width="270" height="17" isRemoveLineWhenBlank="true" uuid="08c0cf63-d216-4e78-bd4f-85338189add9"/>
+				<box leftPadding="5"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{B_PinCode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="26" width="270" height="20" uuid="f914951a-2042-4116-aa03-e9b29a9a1a0f"/>
+				<box leftPadding="5"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ReferenceNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="289" width="270" height="17" isRemoveLineWhenBlank="true" uuid="3b907d85-9044-44f3-9d21-9340878b0400"/>
+				<box leftPadding="5"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{S_Address1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="374" width="270" height="17" isRemoveLineWhenBlank="true" uuid="bb55ffbf-1c94-44c8-886b-c211d57d5cd2"/>
+				<box leftPadding="5"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{S_PinCode}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="46" width="270" height="24" isPrintWhenDetailOverflows="true" uuid="1f77b68a-fe54-4387-a6a1-77beae0e786f"/>
+				<box leftPadding="5"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Description}+" "+$F{TrackingNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="89" width="270" height="17" uuid="97209f99-05e4-4ce4-9bc6-6ff749789aaa">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box leftPadding="5"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{B_Name}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="210" width="70" height="17" isRemoveLineWhenBlank="true" uuid="a652fc59-6933-444a-938e-2bc18a65329a"/>
+				<box leftPadding="5"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Phone No:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="340" width="270" height="17" isRemoveLineWhenBlank="true" uuid="707f15c1-b089-43dd-a196-3fc3bd521243"/>
+				<box leftPadding="5"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{S_City}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="159" width="270" height="17" isRemoveLineWhenBlank="true" uuid="fe3463c6-28ef-4287-9cbd-aad3184726fa"/>
+				<box leftPadding="5"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{B_City}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="357" width="270" height="17" isRemoveLineWhenBlank="true" uuid="21372ff3-d00a-4432-b251-83a3b1634372"/>
+				<box leftPadding="5"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{S_State}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="108" width="270" height="17" isRemoveLineWhenBlank="true" uuid="4181f3aa-83fb-4cc4-8ac3-591c7e5839bd"/>
+				<box leftPadding="5"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{B_Address1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-1" y="244" width="270" height="24" uuid="35a7e0cf-3014-401c-9f09-27b9b78b49c7"/>
+				<box leftPadding="5"/>
+				<textElement>
+					<font size="16" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[If its undelivered please return to :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="70" y="210" width="200" height="17" isRemoveLineWhenBlank="true" uuid="d4b55396-74f3-49f2-a7e2-5b3e7f90982b">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{B_PhoneNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="142" width="270" height="17" isRemoveLineWhenBlank="true" uuid="74c1fcf4-7a5d-461b-90fc-0d3fef0bfcc0"/>
+				<box leftPadding="5"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{B_Address3}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="391" width="70" height="17" isRemoveLineWhenBlank="true" uuid="d5d9e9f9-24c8-418d-8c16-7b6c31341509"/>
+				<box leftPadding="5"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Phone No:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="70" y="391" width="200" height="17" isRemoveLineWhenBlank="true" uuid="c48ec0b8-dc21-449f-93ba-041f80623d84"/>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{S_PhoneNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="227" width="270" height="17" uuid="665fd523-bfbc-4abf-b6b4-60770fb98d26"/>
+				<box leftPadding="5"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{B_Country}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
